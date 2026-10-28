@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engr. Abdullah Al Mamun</title>
+<meta name="description" content="Engr. Abdullah Al Mamun — B.Sc. in EEE (CUET), IEB F-16000. Vice-Chairman (Academic & HRD), IEB Dhaka Centre; Chairman, ION Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0f4a32; --green-2:#16613f; --gold:#b8862b; --ink:#16201b; --muted:#5b6660;
+  --paper:#f7f5ef; --card:#ffffff; --line:#e3ded2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(15,74,50,.97);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+nav .brand{font-family:Fraunces,serif;font-weight:600;font-size:18px;text-decoration:none;white-space:nowrap}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{text-decoration:none;opacity:.85}
+nav ul a:hover{opacity:1;color:#f1d79b}
+
+header.hero{background:linear-gradient(135deg,var(--green) 0%,var(--green-2) 100%);color:#fff;overflow:hidden;position:relative}
+header.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;border:2px solid rgba(184,134,43,.45)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px;position:relative;z-index:1}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#f1d79b;font-weight:600}
+.hero h1{font-family:Fraunces,serif;font-size:clamp(34px,5.4vw,56px);line-height:1.08;margin:12px 0 18px}
+.rule{width:64px;height:3px;background:var(--gold);margin-bottom:20px}
+.hero p.lead{font-size:18px;opacity:.92;max-width:34em}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px;font-size:14px}
+.chip b{color:#f1d79b;font-weight:600}
+.portrait{justify-self:center;width:min(320px,100%);aspect-ratio:295/390;border-radius:18px;overflow:hidden;border:4px solid rgba(255,255,255,.9);box-shadow:0 24px 48px rgba(0,0,0,.28)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-family:Fraunces,serif;font-size:30px;color:var(--green);margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.role{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:16px 18px}
+.role .t{font-weight:600}
+.role .o{color:var(--muted);font-size:15px}
+.role.past{border-left-color:#9aa59f}
+.edu{display:flex;gap:16px;flex-wrap:wrap}
+.edu .role{flex:1 1 260px}
+
+.election{background:var(--green);color:#fff}
+.election h2{color:#fff}
+.election .sub{color:rgba(255,255,255,.8)}
+.ballot{display:flex;align-items:stretch;gap:0;margin:8px 0 28px;width:max-content;max-width:100%;border-radius:8px;overflow:hidden}
+.ballot span{background:#0a3624;padding:12px 18px;letter-spacing:.14em;font-size:13px;font-weight:600;display:flex;align-items:center}
+.ballot strong{background:var(--gold);font-family:Fraunces,serif;font-size:34px;padding:0 20px;display:flex;align-items:center}
+.post{font-family:Fraunces,serif;font-size:24px;line-height:1.25}
+.post small{display:block;font-family:Inter,sans-serif;font-size:14px;letter-spacing:.06em;color:#f1d79b;margin-top:6px;font-weight:600}
+.vision{list-style:none;display:grid;gap:14px;margin-top:24px}
+.vision li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:16px 18px}
+.appeal{margin-top:28px;font-family:Fraunces,serif;font-size:20px;color:#f1d79b}
+
+
+.tabs{position:sticky;top:56px;z-index:9;background:var(--paper);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs .wrap::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;font:600 15px Inter,sans-serif;color:var(--muted);padding:16px 14px 14px;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--green)}
+.tab[aria-selected="true"]{color:var(--green);border-bottom-color:var(--gold)}
+.tab:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+section[role="tabpanel"]{border-bottom:0;min-height:52vh}
+section[hidden]{display:none}
+.election .wrap{padding-top:0}
+footer{background:#0a3624;color:rgba(255,255,255,.75);font-size:14px;padding:28px 0;text-align:center}
+footer a{color:#f1d79b;text-decoration:none}
+
+@media (max-width:760px){
+  nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:48px;gap:28px}
+  .portrait{order:-1;width:220px}
+  .tab{padding:15px 10px 13px;font-size:14px}
+  .grid{grid-template-columns:1fr}
+  section{padding:48px 0}
+  h2{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Engr. Abdullah Al Mamun</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Electrical &amp; Electronic Engineer</div>
+      <h1>Engr. Abdullah Al Mamun</h1>
+      <div class="rule"></div>
+      <p class="lead">Vice-Chairman (Academic &amp; Human Resources Development), IEB Dhaka Centre, and Chairman, ION Solutions.</p>
+      <div class="chips">
+        <div class="chip">B.Sc. in EEE <b>(CUET)</b></div>
+        <div class="chip">IEB <b>F-16000</b></div>
+      </div>
+    </div>
+    <div class="portrait"><img src="assets/mamun.jpg" alt="Portrait of Engr. Abdullah Al Mamun" width="295" height="390"></div>
+  </div>
+</header>
+
+
+<div class="tabs">
+  <div class="wrap" role="tablist" aria-label="Profile sections">
+    <button class="tab" role="tab" id="t-roles" aria-controls="roles" aria-selected="true">Roles</button>
+    <button class="tab" role="tab" id="t-former" aria-controls="former" aria-selected="false" tabindex="-1">Former</button>
+    <button class="tab" role="tab" id="t-advocacy" aria-controls="advocacy" aria-selected="false" tabindex="-1">Advocacy</button>
+    <button class="tab" role="tab" id="t-election" aria-controls="election" aria-selected="false" tabindex="-1">Election 2026</button>
+  </div>
+</div>
+
+<main>
+<section id="roles" role="tabpanel" aria-labelledby="t-roles">
+  <div class="wrap">
+    <h2>Current Roles</h2>
+    <p class="sub">Professional, institutional and alumni responsibilities.</p>
+    <div class="grid">
+      <div class="role"><div class="t">Vice-Chairman (Academic &amp; Human Resources Development)</div><div class="o">IEB Dhaka Centre</div></div>
+      <div class="role"><div class="t">Member, Various Committees</div><div class="o">Institution of Engineers, Bangladesh (IEB)</div></div>
+      <div class="role"><div class="t">Chairman</div><div class="o">ION Solutions</div></div>
+      <div class="role"><div class="t">Assistant Organizing Secretary</div><div class="o">Ex-Student Alumni Association, CUET</div></div>
+      <div class="role"><div class="t">Member, Convening Committee</div><div class="o">AEB</div></div>
+      <div class="role"><div class="t">Member, Office Secretarial Committee</div><div class="o">AEB</div></div>
+      <div class="role"><div class="t">Co-Ordinator, Cumilla Division</div><div class="o">Ziaur Rahman Foundation (ZRF)</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="former" role="tabpanel" aria-labelledby="t-former" hidden>
+  <div class="wrap">
+    <h2>Former Roles</h2>
+    <p class="sub">Earlier positions held.</p>
+    <div class="grid">
+      <div class="role past"><div class="t">Publicity Secretary</div><div class="o">AEB</div></div>
+      <div class="role past"><div class="t">Assistant Organizing Secretary</div><div class="o">AEB</div></div>
+      <div class="role past"><div class="t">Assistant IT Secretary</div><div class="o">Ex-Student Alumni Association, CUET</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="advocacy" role="tabpanel" aria-labelledby="t-advocacy" hidden>
+  <div class="wrap">
+    <h2>Engineers&rsquo; Rights Advocacy</h2>
+    <p class="sub">Representing IEB in coordination with the Engineers&rsquo; Rights Movement (ERM).</p>
+    <div class="edu">
+      <div class="role"><div class="t">Education</div><div class="o">B.Sc. in Electrical &amp; Electronic Engineering, Chittagong University of Engineering &amp; Technology (CUET)</div></div>
+      <div class="role"><div class="t">IEB Membership</div><div class="o">F-16000</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="election" class="election" role="tabpanel" aria-labelledby="t-election" hidden>
+  <div class="wrap">
+    <div class="eyebrow">IEB Election 2026 &middot; Term 2027&ndash;2028</div>
+    <h2 style="margin-top:10px">Candidate</h2>
+    <p class="post">Honorary Assistant General Secretary<small>ACADEMIC &amp; INTERNATIONAL AFFAIRS</small></p>
+    <div class="ballot" style="margin-top:20px"><span>BALLOT NO.</span><strong>04</strong></div>
+    <h3 style="font-family:Fraunces,serif;font-size:22px">Vision</h3>
+    <ul class="vision">
+      <li>To take effective and immediate steps on any issue related to the welfare, dignity, recognition and respect for engineers through professional and academic advancement.</li>
+      <li>To ensure job security and create greater employment opportunities in both the public and private sector for engineers through a strong and empowered platform of IEB.</li>
+    </ul>
+    <p class="appeal">Seeking your kind support, blessings and valuable vote.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Engr. Abdullah Al Mamun &middot; Site by <a href="https://futuremind.ltd">FutureMind</a></div>
+</footer>
+
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function show(id,focus){
+    var ok=false;
+    tabs.forEach(function(t){
+      var on=t.getAttribute('aria-controls')===id; if(on) ok=true;
+      t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+      if(on&&focus) t.focus();
+    });
+    return ok;
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){var id=t.getAttribute('aria-controls');show(id);history.replaceState(null,'','#'+id);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!d) return;
+      var n=tabs[(i+d+tabs.length)%tabs.length]; show(n.getAttribute('aria-controls'),true); e.preventDefault();
+    });
+  });
+  var h=location.hash.slice(1); if(h) show(h);
+})();
+</script>
+</body>
+</html>
