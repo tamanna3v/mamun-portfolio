@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Engr. Abdullah Al Mamun</title>
 <meta name="description" content="Engr. Abdullah Al Mamun — B.Sc. in EEE (CUET), IEB F-16000. Vice-Chairman (Academic & HRD), IEB Dhaka Centre; Chairman, ION Solutions.">
+<script>(function(){var l=null;try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='bn')l=q;else l=localStorage.getItem('lang');}catch(e){}document.documentElement.lang=(l==='en')?'en':'bn';})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --green:#0f4a32; --green-2:#16613f; --gold:#b8862b; --ink:#16201b; --muted:#5b6660;
@@ -118,26 +119,42 @@ footer a{color:#f1d79b;text-decoration:none}
   section{padding:48px 0}
   h2{font-size:26px}
 }
+
+/* Bilingual */
+em.en,em.bn{font-style:normal;font-size:inherit;font-weight:inherit;display:inline;padding:0;background:none;letter-spacing:inherit}
+html[lang="bn"] .en, html[lang="en"] .bn{display:none !important}
+html[lang="bn"] body{font-family:"Hind Siliguri",Inter,system-ui,sans-serif;line-height:1.75}
+html[lang="bn"] h1,html[lang="bn"] h2,html[lang="bn"] h3,html[lang="bn"] .brand{font-family:"Noto Serif Bengali","Hind Siliguri",serif}
+.lang{display:inline-flex;border:1px solid rgba(255,255,255,.35);border-radius:999px;overflow:hidden;flex:none}
+.lang button{background:none;border:0;color:#e3efe8;font:500 13px Inter,sans-serif;padding:5px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#b8862b;color:#fff}
+.lang button:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+
+html[lang="bn"] .hero h1{line-height:1.25}
+html[lang="bn"] .eyebrow,html[lang="bn"] .post small,html[lang="bn"] .ballot span,html[lang="bn"] .vc-ballot span{letter-spacing:.02em}
+html[lang="bn"] .tab,html[lang="bn"] .vote-bar a,html[lang="bn"] .vote-bar button,html[lang="bn"] .wa-fab{font-family:"Hind Siliguri",Inter,sans-serif}
+html[lang="bn"] .vc-name,html[lang="bn"] .post,html[lang="bn"] .appeal{font-family:"Noto Serif Bengali",serif}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#top">Engr. Abdullah Al Mamun</a>
+    <a class="brand" href="#top"><span class="en">Engr. Abdullah Al Mamun</span><span class="bn" lang="bn">প্রকৌশলী আব্দুল্লাহ আল মামুন</span></a>
+    <div class="lang" role="group" aria-label="Language / ভাষা"><button type="button" data-lang="bn" aria-pressed="true">বাংলা</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Electrical &amp; Electronic Engineer</div>
-      <h1>Engr. Abdullah Al Mamun</h1>
+      <div class="eyebrow"><span class="en">Electrical &amp; Electronic Engineer</span><span class="bn" lang="bn">ইলেকট্রিক্যাল ও ইলেকট্রনিক ইঞ্জিনিয়ার</span></div>
+      <h1><span class="en">Engr. Abdullah Al Mamun</span><span class="bn" lang="bn">প্রকৌশলী আব্দুল্লাহ আল মামুন</span></h1>
       <div class="rule"></div>
-      <p class="lead">Vice-Chairman (Academic &amp; Human Resources Development), IEB Dhaka Centre, and Chairman, ION Solutions.</p>
+      <p class="lead"><span class="en">Vice-Chairman (Academic &amp; Human Resources Development), IEB Dhaka Centre, and Chairman, ION Solutions.</span><span class="bn" lang="bn">ভাইস চেয়ারম্যান (একাডেমিক ও মানবসম্পদ উন্নয়ন), আইইবি ঢাকা কেন্দ্র; চেয়ারম্যান, আয়ন সলিউশনস (ION Solutions)।</span></p>
       <div class="chips">
-        <div class="chip">B.Sc. in EEE <b>(CUET)</b></div>
-        <div class="chip">IEB <b>F-16000</b></div>
+        <div class="chip"><span class="en">B.Sc. in EEE <b>(CUET)</b></span><span class="bn" lang="bn">বিএসসি ইন ইইই <b>(চুয়েট)</b></span></div>
+        <div class="chip"><span class="en">IEB</span><span class="bn" lang="bn">আইইবি</span> <b>F-16000</b></div>
       </div>
     </div>
     <div class="portrait"><img src="assets/mamun.jpg" alt="Portrait of Engr. Abdullah Al Mamun" width="295" height="390"></div>
@@ -147,76 +164,76 @@ footer a{color:#f1d79b;text-decoration:none}
 
 <div class="tabs">
   <div class="wrap" role="tablist" aria-label="Profile sections">
-    <button class="tab" role="tab" id="t-roles" aria-controls="roles" aria-selected="true">Roles</button>
-    <button class="tab" role="tab" id="t-former" aria-controls="former" aria-selected="false" tabindex="-1">Former</button>
-    <button class="tab" role="tab" id="t-advocacy" aria-controls="advocacy" aria-selected="false" tabindex="-1">Advocacy</button>
-    <button class="tab" role="tab" id="t-election" aria-controls="election" aria-selected="false" tabindex="-1">Election 2026</button>
+    <button class="tab" role="tab" id="t-roles" aria-controls="roles" aria-selected="true"><span class="en">Roles</span><span class="bn" lang="bn">বর্তমান দায়িত্ব</span></button>
+    <button class="tab" role="tab" id="t-former" aria-controls="former" aria-selected="false" tabindex="-1"><span class="en">Former</span><span class="bn" lang="bn">পূর্বের দায়িত্ব</span></button>
+    <button class="tab" role="tab" id="t-advocacy" aria-controls="advocacy" aria-selected="false" tabindex="-1"><span class="en">Advocacy</span><span class="bn" lang="bn">অধিকার আন্দোলন</span></button>
+    <button class="tab" role="tab" id="t-election" aria-controls="election" aria-selected="false" tabindex="-1"><span class="en">Election 2026</span><span class="bn" lang="bn">নির্বাচন ২০২৬</span></button>
   </div>
 </div>
 
 <main>
 <section id="roles" role="tabpanel" aria-labelledby="t-roles">
   <div class="wrap">
-    <h2>Current Roles</h2>
-    <p class="sub">Professional, institutional and alumni responsibilities.</p>
+    <h2><span class="en">Current Roles</span><span class="bn" lang="bn">বর্তমান দায়িত্ব</span></h2>
+    <p class="sub"><span class="en">Professional, institutional and alumni responsibilities.</span><span class="bn" lang="bn">পেশাগত, প্রাতিষ্ঠানিক ও অ্যালামনাই দায়িত্ব।</span></p>
     <div class="grid">
-      <div class="role"><div class="t">Vice-Chairman (Academic &amp; Human Resources Development)</div><div class="o">IEB Dhaka Centre</div></div>
-      <div class="role"><div class="t">Member, Various Committees</div><div class="o">Institution of Engineers, Bangladesh (IEB)</div></div>
-      <div class="role"><div class="t">Chairman</div><div class="o">ION Solutions</div></div>
-      <div class="role"><div class="t">Assistant Organizing Secretary</div><div class="o">Ex-Student Alumni Association, CUET</div></div>
-      <div class="role"><div class="t">Member, Convening Committee</div><div class="o">AEB</div></div>
-      <div class="role"><div class="t">Member, Office Secretarial Committee</div><div class="o">AEB</div></div>
-      <div class="role"><div class="t">Co-Ordinator, Cumilla Division</div><div class="o">Ziaur Rahman Foundation (ZRF)</div></div>
+      <div class="role"><div class="t"><span class="en">Vice-Chairman (Academic &amp; Human Resources Development)</span><span class="bn" lang="bn">ভাইস চেয়ারম্যান (একাডেমিক ও মানবসম্পদ উন্নয়ন)</span></div><div class="o"><span class="en">IEB Dhaka Centre</span><span class="bn" lang="bn">আইইবি ঢাকা কেন্দ্র</span></div></div>
+      <div class="role"><div class="t"><span class="en">Member, Various Committees</span><span class="bn" lang="bn">সদস্য, বিভিন্ন কমিটি</span></div><div class="o"><span class="en">Institution of Engineers, Bangladesh (IEB)</span><span class="bn" lang="bn">ইনস্টিটিউশন অব ইঞ্জিনিয়ার্স, বাংলাদেশ (আইইবি)</span></div></div>
+      <div class="role"><div class="t"><span class="en">Chairman</span><span class="bn" lang="bn">চেয়ারম্যান</span></div><div class="o"><span class="en">ION Solutions</span><span class="bn" lang="bn">আয়ন সলিউশনস (ION Solutions)</span></div></div>
+      <div class="role"><div class="t"><span class="en">Assistant Organizing Secretary</span><span class="bn" lang="bn">সহকারী সাংগঠনিক সম্পাদক</span></div><div class="o"><span class="en">Ex-Student Alumni Association, CUET</span><span class="bn" lang="bn">প্রাক্তন ছাত্র অ্যালামনাই অ্যাসোসিয়েশন, চুয়েট</span></div></div>
+      <div class="role"><div class="t"><span class="en">Member, Convening Committee</span><span class="bn" lang="bn">সদস্য, আহ্বায়ক কমিটি</span></div><div class="o"><span class="en">AEB</span><span class="bn" lang="bn">এ্যাব (AEB)</span></div></div>
+      <div class="role"><div class="t"><span class="en">Member, Office Secretarial Committee</span><span class="bn" lang="bn">সদস্য, দপ্তর সম্পাদকীয় কমিটি</span></div><div class="o"><span class="en">AEB</span><span class="bn" lang="bn">এ্যাব (AEB)</span></div></div>
+      <div class="role"><div class="t"><span class="en">Co-Ordinator, Cumilla Division</span><span class="bn" lang="bn">সমন্বয়ক, কুমিল্লা বিভাগ</span></div><div class="o"><span class="en">Ziaur Rahman Foundation (ZRF)</span><span class="bn" lang="bn">জিয়াউর রহমান ফাউন্ডেশন (জেডআরএফ)</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="former" role="tabpanel" aria-labelledby="t-former" hidden>
   <div class="wrap">
-    <h2>Former Roles</h2>
-    <p class="sub">Earlier positions held.</p>
+    <h2><span class="en">Former Roles</span><span class="bn" lang="bn">পূর্বের দায়িত্ব</span></h2>
+    <p class="sub"><span class="en">Earlier positions held.</span><span class="bn" lang="bn">আগে যেসব পদে ছিলেন।</span></p>
     <div class="grid">
-      <div class="role past"><div class="t">Publicity Secretary</div><div class="o">AEB</div></div>
-      <div class="role past"><div class="t">Assistant Organizing Secretary</div><div class="o">AEB</div></div>
-      <div class="role past"><div class="t">Assistant IT Secretary</div><div class="o">Ex-Student Alumni Association, CUET</div></div>
+      <div class="role past"><div class="t"><span class="en">Publicity Secretary</span><span class="bn" lang="bn">প্রচার সম্পাদক</span></div><div class="o"><span class="en">AEB</span><span class="bn" lang="bn">এ্যাব (AEB)</span></div></div>
+      <div class="role past"><div class="t"><span class="en">Assistant Organizing Secretary</span><span class="bn" lang="bn">সহকারী সাংগঠনিক সম্পাদক</span></div><div class="o"><span class="en">AEB</span><span class="bn" lang="bn">এ্যাব (AEB)</span></div></div>
+      <div class="role past"><div class="t"><span class="en">Assistant IT Secretary</span><span class="bn" lang="bn">সহকারী আইটি সম্পাদক</span></div><div class="o"><span class="en">Ex-Student Alumni Association, CUET</span><span class="bn" lang="bn">প্রাক্তন ছাত্র অ্যালামনাই অ্যাসোসিয়েশন, চুয়েট</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="advocacy" role="tabpanel" aria-labelledby="t-advocacy" hidden>
   <div class="wrap">
-    <h2>Engineers&rsquo; Rights Advocacy</h2>
-    <p class="sub">Representing IEB in coordination with the Engineers&rsquo; Rights Movement (ERM).</p>
+    <h2><span class="en">Engineers&rsquo; Rights Advocacy</span><span class="bn" lang="bn">প্রকৌশলীদের অধিকার আন্দোলন</span></h2>
+    <p class="sub"><span class="en">Representing IEB in coordination with the Engineers&rsquo; Rights Movement (ERM).</span><span class="bn" lang="bn">ইঞ্জিনিয়ার্স রাইটস মুভমেন্ট (ইআরএম)-এর সাথে সমন্বয়ে আইইবি-র প্রতিনিধিত্ব।</span></p>
     <div class="edu">
-      <div class="role"><div class="t">Education</div><div class="o">B.Sc. in Electrical &amp; Electronic Engineering, Chittagong University of Engineering &amp; Technology (CUET)</div></div>
-      <div class="role"><div class="t">IEB Membership</div><div class="o">F-16000</div></div>
+      <div class="role"><div class="t"><span class="en">Education</span><span class="bn" lang="bn">শিক্ষা</span></div><div class="o"><span class="en">B.Sc. in Electrical &amp; Electronic Engineering, Chittagong University of Engineering &amp; Technology (CUET)</span><span class="bn" lang="bn">বিএসসি ইন ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং, চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (চুয়েট)</span></div></div>
+      <div class="role"><div class="t"><span class="en">IEB Membership</span><span class="bn" lang="bn">আইইবি সদস্য নং</span></div><div class="o"><span class="en">F-16000</span><span class="bn" lang="bn">F-16000</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="election" class="election" role="tabpanel" aria-labelledby="t-election" hidden>
   <div class="wrap">
-    <div class="eyebrow">IEB Election &middot; 12 November 2026 &middot; Term 2027&ndash;2028</div>
-    <h2 style="margin-top:10px">Candidate</h2>
-    <p class="post">Honorary Assistant General Secretary<small>ACADEMIC &amp; INTERNATIONAL AFFAIRS</small></p>
-    <div class="ballot" style="margin-top:20px"><span>BALLOT NO.</span><strong>04</strong></div>
-    <h3 style="font-family:Fraunces,serif;font-size:22px">Vision</h3>
+    <div class="eyebrow"><span class="en">IEB Election &middot; 12 November 2026 &middot; Term 2027&ndash;2028</span><span class="bn" lang="bn">আইইবি নির্বাচন &middot; ১২ নভেম্বর ২০২৬ &middot; মেয়াদ ২০২৭&ndash;২০২৮</span></div>
+    <h2 style="margin-top:10px"><span class="en">Candidate</span><span class="bn" lang="bn">প্রার্থী</span></h2>
+    <p class="post"><span class="en">Honorary Assistant General Secretary</span><span class="bn" lang="bn">অনারারি সহকারী সাধারণ সম্পাদক</span><small><span class="en">ACADEMIC &amp; INTERNATIONAL AFFAIRS</span><span class="bn" lang="bn">একাডেমিক ও আন্তর্জাতিক বিষয়ক</span></small></p>
+    <div class="ballot" style="margin-top:20px"><span><span class="en">BALLOT NO.</span><span class="bn" lang="bn">ব্যালট নং</span></span><strong><em class="en">04</em><em class="bn" lang="bn">০৪</em></strong></div>
+    <h3 style="font-family:Fraunces,serif;font-size:22px"><span class="en">Vision</span><span class="bn" lang="bn">ভিশন</span></h3>
     <ul class="vision">
-      <li>To take effective and immediate steps on any issue related to the welfare, dignity, recognition and respect for engineers through professional and academic advancement.</li>
-      <li>To ensure job security and create greater employment opportunities in both the public and private sector for engineers through a strong and empowered platform of IEB.</li>
+      <li><span class="en">To take effective and immediate steps on any issue related to the welfare, dignity, recognition and respect for engineers through professional and academic advancement.</span><span class="bn" lang="bn">পেশাগত ও একাডেমিক উন্নয়নের মাধ্যমে প্রকৌশলীদের কল্যাণ, মর্যাদা, স্বীকৃতি ও সম্মান সংক্রান্ত যেকোনো বিষয়ে কার্যকর ও তাৎক্ষণিক পদক্ষেপ নেওয়া।</span></li>
+      <li><span class="en">To ensure job security and create greater employment opportunities in both the public and private sector for engineers through a strong and empowered platform of IEB.</span><span class="bn" lang="bn">আইইবি-র একটি শক্তিশালী ও ক্ষমতায়িত প্ল্যাটফর্মের মাধ্যমে প্রকৌশলীদের চাকরির নিরাপত্তা নিশ্চিত করা এবং সরকারি ও বেসরকারি দুই খাতেই কর্মসংস্থানের সুযোগ বাড়ানো।</span></li>
     </ul>
-    <p class="appeal">Seeking your kind support, blessings and valuable vote.</p>
+    <p class="appeal"><span class="en">Seeking your kind support, blessings and valuable vote.</span><span class="bn" lang="bn">আপনাদের দোয়া, সমর্থন ও মূল্যবান ভোট প্রত্যাশা করছি।</span></p>
   </div>
 </section>
 </main>
 
 <a class="wa-fab" href="https://wa.me/8801720828110?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE" target="_blank" rel="noopener" aria-label="Chat with Engr. Abdullah Al Mamun on WhatsApp">
   <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2L9 9.5z" fill="currentColor" stroke="none"/></svg></span>
-  <span class="txt">Chat on WhatsApp<small>Engr. Abdullah Al Mamun</small></span>
+  <span class="txt"><span class="en">Chat on WhatsApp</span><span class="bn" lang="bn">WhatsApp-এ কথা বলুন</span><small><span class="en">Engr. Abdullah Al Mamun</span><span class="bn" lang="bn">প্রকৌশলী আব্দুল্লাহ আল মামুন</span></small></span>
 </a>
 
 <footer>
-  <div class="wrap">&copy; 2026 Engr. Abdullah Al Mamun &middot; Site by <a href="https://futuremind.ltd">FutureMind</a></div>
+  <div class="wrap">&copy; 2026 <span class="en">Engr. Abdullah Al Mamun</span><span class="bn" lang="bn">প্রকৌশলী আব্দুল্লাহ আল মামুন</span> &middot; <span class="en">Site by</span><span class="bn" lang="bn">সাইট:</span> <a href="https://futuremind.ltd">FutureMind</a></div>
 </footer>
 
 
@@ -251,10 +268,10 @@ footer a{color:#f1d79b;text-decoration:none}
       <div class="vc-top">
         <img class="vc-photo" src="assets/mamun.jpg" width="295" height="390" alt="Portrait of Engr. Abdullah Al Mamun">
         <div class="vc-head">
-          <h2 class="vc-name" id="vote-title">Engr. Abdullah Al Mamun</h2>
-          <p class="vc-post">HONORARY ASSISTANT GENERAL SECRETARY<br>(ACADEMIC &amp; INTERNATIONAL AFFAIRS)</p>
+          <h2 class="vc-name" id="vote-title"><span class="en">Engr. Abdullah Al Mamun</span><span class="bn" lang="bn">প্রকৌশলী আব্দুল্লাহ আল মামুন</span></h2>
+          <p class="vc-post"><span class="en">HONORARY ASSISTANT GENERAL SECRETARY<br>(ACADEMIC &amp; INTERNATIONAL AFFAIRS)</span><span class="bn" lang="bn">অনারারি সহকারী সাধারণ সম্পাদক<br>(একাডেমিক ও আন্তর্জাতিক বিষয়ক)</span></p>
         </div>
-        <div class="vc-ballot"><span>BALLOT<br>NO.</span><strong>04</strong></div>
+        <div class="vc-ballot"><span><span class="en">BALLOT<br>NO.</span><span class="bn" lang="bn">ব্যালট<br>নং</span></span><strong><em class="en">04</em><em class="bn" lang="bn">০৪</em></strong></div>
       </div>
       <div class="letter" lang="bn">
       <p>সম্মানিত প্রকৌশলী,<br>আসসালামু আলাইকুম।</p>
@@ -264,7 +281,7 @@ footer a{color:#f1d79b;text-decoration:none}
     </div>
       <div class="vote-bar">
         <a class="vote-wa" href="https://wa.me/8801720828110?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE" target="_blank" rel="noopener">WhatsApp</a>
-        <button class="vote-ok" type="button" data-close>View profile</button>
+        <button class="vote-ok" type="button" data-close><span class="en">View profile</span><span class="bn" lang="bn">প্রোফাইল দেখুন</span></button>
       </div>
     </article>
   </div>
@@ -277,9 +294,17 @@ footer a{color:#f1d79b;text-decoration:none}
   var last=null;
   function close(){ box.hidden=true; document.body.style.overflow=''; try{ sessionStorage.setItem('voteSeen','1'); }catch(e){} if(last&&last.focus) last.focus(); document.removeEventListener('keydown',onKey); }
   function onKey(e){ if(e.key==='Escape') close(); }
-  box.addEventListener('click',function(e){ if(e.target===box||e.target.hasAttribute('data-close')) close(); });
+  box.addEventListener('click',function(e){ if(e.target===box||e.target.closest('[data-close]')) close(); });
   last=document.activeElement; box.hidden=false; document.body.style.overflow='hidden'; document.addEventListener('keydown',onKey);
   var ok=box.querySelector('.vote-ok'); if(ok) ok.focus({preventScroll:true}); box.scrollTop=0;
+})();
+</script>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.lang button');
+  function set(l){ document.documentElement.lang=l; btns.forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-lang')===l)}); try{localStorage.setItem('lang',l)}catch(e){} }
+  btns.forEach(function(x){x.addEventListener('click',function(){set(x.getAttribute('data-lang'))})});
+  set(document.documentElement.lang==='en'?'en':'bn');
 })();
 </script>
 </body>
